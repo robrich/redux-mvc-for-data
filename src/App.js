@@ -7,7 +7,7 @@ import Ajaxify from './components/Ajaxify';
 import Failinator from './components/Failinator';
 
 function App() {
-  const [tab, setTab] = useState(0);
+  const [tab, setTab] = useState('helloWorld');
 
   function getTab() {
     switch (tab) {

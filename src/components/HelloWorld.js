@@ -3,7 +3,7 @@ import store from '../store';
 
 const dispatch = store.dispatch;
 
-class Eventer extends Component {
+class HelloWorld extends Component {
 
   constructor(props) {
     super(props);
@@ -43,4 +43,4 @@ class Eventer extends Component {
   }
 }
 
-export default Eventer;
+export default HelloWorld;

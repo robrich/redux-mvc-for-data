@@ -2,6 +2,9 @@ import { postAjax } from '../services/ajax';
 
 export function ajaxStart({fail, message}) {
   return async function (dispatch) {
+    dispatch({
+      type: 'AJAX_START'
+    })
     const response = await postAjax({fail, message});
     if (response.success) {
       dispatch(ajaxSuccess(response));
